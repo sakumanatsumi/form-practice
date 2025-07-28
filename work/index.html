@@ -10,8 +10,8 @@
 </head>
 
 <body>
-  <div class="top-wrapper">
-    <div class="title-box">
+  <section class="base">
+    <div class="inner">
       <h1 class="page-title">登録用フォーム</h1>
     </div>
     <form class="form_base" action="">
@@ -140,9 +140,65 @@
           </label>
           <input id="email" class="input_area" type="email" autocomplete="email" required="">
         </div>
-        <div class="input_section"></div>
-        <div class="input_section"></div>
-      </div>
+        <div class="input_section">
+          <label class="label_text" for="password">
+            パスワード
+            <span class="required">※</span>
+          </label>
+          <input id="password" class="input_area" type="text" required="">
+        </div>
+        <div class="input_section">
+          <label class="label_text" for="duplication_password">
+            確認用パスワード
+            <span class="required">※</span>
+          </label>
+          <input id="duplication_password" class="input_area" type="password" required="">
+        </div>
+        <div class="contact_content">
+          <h3 class="content_title">連絡先</h3>
+          <div class="input_section">
+            <label class="label_text" for="address">
+              住所
+              <span class="required">※</span>
+            </label>
+            <input id="address" class="input_area" type="text" required="">
+          </div>
+          <div class="input_section">
+            <label class="label_text" for="email">
+              電話番号
+              <span class="required">※</span>
+            </label>
+            <input id="tel" class="input_area" type="tel" autocomplete="tel" required="">
+          </div>
+        </div>
+        <div class="subscription_content">
+          <h3 class="content_title">購読情報</h3>
+          <div class="input_section subscription_unit">
+            <input id="email-magazine" class="input_area" type="checkbox" name="subscription" value="email-magazine">
+            <label class="label_text subscription_label" for="email-magazine">
+              メールマガジン
+            </label>
+          </div>
+          <div class="input_section subscription_unit">
+            <input id="coupon" class="subscription_chechbox" type="checkbox" name="subscription" value="coupon">
+            <label class="label_text subscription_label" for="coupon">
+              クーポン
+            </label>
+          </div>
+        </div>
+        <div class="submit_content">
+          <button class="btn btn_submit" type="submit">アカウント作成</button>
+          <p class="other-text">
+            アカウントを作成することにより、
+            <a class="link-color" href="#">利用規約</a>
+            と
+            <a class="link-color" href="#">プライバシーポリシー</a>
+            に同意するものとします。
+          </p>
+        </div>
+    </form>
+
+  </section>
 </body>
 
 </html>
